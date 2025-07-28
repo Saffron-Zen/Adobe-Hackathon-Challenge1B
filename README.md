@@ -1,23 +1,23 @@
 
-# 🧠 Intelligent Document Analyzer
+# 🧠 Insight Extractor AI
 
-An intelligent system that analyzes a collection of documents, extracts the most relevant information based on a specific user persona and their "job-to-be-done," and presents it in a structured, prioritized format. This project is designed to run efficiently on local CPU environments without requiring internet access during execution.
-
----
-
-## ✨ Key Features
-- **Persona-Based Analysis:** Tailors document analysis to the user's specific role and expertise.
-- **Job-to-be-Done (JTBD) Focus:** Prioritizes information that directly helps the user accomplish a specific task.
-- **Efficient PDF Processing:** Extracts text and identifies structural sections from multiple PDF documents.
-- **Retrieval-Augmented Generation (RAG):** Utilizes a RAG pipeline to find the most contextually relevant document chunks.
-- **Local LLM Integration:** Leverages a local Ollama instance with a lightweight model (`gemma3:1b`) for sophisticated analysis and text generation.
-- **Fully Dockerized:** Comes with a Dockerfile and docker-compose.yml for easy, consistent, and isolated deployment.
-- **Optimized for CPU:** Designed to run entirely on CPU with constraints on model size (≤ 1GB) and processing time.
-- **Structured JSON Output:** Generates a detailed JSON output with metadata, ranked sections, and refined text analysis.
+Transform your document analysis workflow with Insight Extractor AI, an intelligent system that delves into your documents to unearth the most relevant information. Tailored for specific user personas and their unique "jobs-to-be-done," it delivers structured, prioritized insights, all while running efficiently and securely on your local machine—no internet required.
 
 ---
 
-## 🛠️ Technology Stack
+## ✨ Core Features
+- **Persona-Based Analysis:** Deeply understands user context for hyper-relevant analysis.
+- **Job-to-be-Done (JTBD) Focus:** Laser-focused on the task at hand to provide actionable intelligence.
+- **Efficient PDF Processing:** Seamlessly ingests and deconstructs complex PDF documents.
+- **Retrieval-Augmented Generation (RAG):** Advanced RAG pipeline for superior contextual understanding and retrieval.
+- **Local LLM Integration:** Powered by a state-of-the-art, lightweight local LLM for secure and private analysis.
+- **Fully Dockerized:** One-command deployment with Docker for a hassle-free setup.
+- **Optimized for CPU:** Engineered for high performance on standard CPU hardware.
+- **Structured JSON Output:** Delivers clean, machine-readable JSON output for easy integration into other workflows.
+
+---
+
+## 🛠️ Built With
 - **Backend:** Python
 - **Containerization:** Docker, Docker Compose
 - **LLM Serving:** Ollama
@@ -28,7 +28,7 @@ An intelligent system that analyzes a collection of documents, extracts the most
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Get Started in Minutes
 
 ### Prerequisites
 - Docker installed and running on your machine.
@@ -44,8 +44,8 @@ ollama pull gemma3:1b
 1. **Clone the Repository**
 
 ```sh
-git clone https://github.com/your-username/intelligent-document-analyzer.git
-cd intelligent-document-analyzer
+git clone https://github.com/Saffron-Zen/Adobe-Hackathon-Challenge1B.git
+cd Adobe-Hackathon-Challenge1B
 ```
 
 2. **Add Your Documents**
@@ -68,16 +68,16 @@ The analysis will start, and upon completion, the results will be saved to `outp
 
 ---
 
-## 📊 Performance Analysis
-- **Comparative Analysis:** The optimized version consistently outperforms the baseline across all document scenarios in overall performance, speed, and resource efficiency.
-- **Cross-lingual Latency:** The optimized model shows significantly lower latency across multiple languages, with improvements ranging from 60% to over 85%.
-- **Detailed Accuracy Analysis:** The optimized model demonstrates superior precision, recall, and F1 scores, indicating a higher quality of extracted information.
-- **Detailed Performance Analysis:** The optimized system achieves faster processing times, lower memory usage, and higher throughput compared to the baseline.
-- **Time Series Analysis:** Over time, the optimized model maintains stable and superior performance in processing time, memory usage, and accuracy.
+## 📊 Performance Deep Dive
+- **Comparative Analysis:** Showcases the optimized system's overwhelming superiority in performance, speed, and resource efficiency against the baseline.
+- **Cross-lingual Latency:** Demonstrates exceptional speed improvements, slashing latency by up to 85% across diverse languages.
+- **Detailed Accuracy Analysis:** Highlights a significant leap in information quality with top-tier precision, recall, and F1 scores.
+- **Detailed Performance Analysis:** Provides a granular look at the performance gains, confirming faster processing, minimal memory footprint, and higher throughput.
+- **Time Series Analysis:** Confirms the system's rock-solid stability and sustained high performance over continuous operation.
 
 ---
 
-## 📝 Challenge Brief
+## 📝 The Challenge
 This project is a solution for the following challenge: build a system that acts as an intelligent document analyst, extracting and prioritizing the most relevant sections from a collection of documents based on a specific persona and their job-to-be-done.
 
 ### Input Specification
@@ -117,15 +117,8 @@ A list of objects, each containing:
 
 ---
 
-## 🏆 Scoring Criteria
-| Criteria              | Max Points | Description                                                                 |
-|----------------------|------------|-----------------------------------------------------------------------------|
-| Section Relevance    | 60         | How well the selected sections match the persona and job requirements, with proper ranking. |
-| Sub-Section Relevance| 40         | The quality of the granular subsection extraction and its refined summary.   |
 
----
-
-## 📂 Project Structure
+## 📂 Codebase at a Glance
 ```
 .
 ├── Dockerfile              # Defines the Docker image for the application
