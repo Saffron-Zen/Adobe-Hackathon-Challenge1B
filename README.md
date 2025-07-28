@@ -69,6 +69,7 @@ The analysis will start, and upon completion, the results will be saved to `outp
 ---
 
 ## 📊 Performance Deep Dive
+![Comparative Analysis](Analytics/comparative_analysis.png)
 - **Comparative Analysis:** Showcases the optimized system's overwhelming superiority in performance, speed, and resource efficiency against the baseline.
 - **Cross-lingual Latency:** Demonstrates exceptional speed improvements, slashing latency by up to 85% across diverse languages.
 - **Detailed Accuracy Analysis:** Highlights a significant leap in information quality with top-tier precision, recall, and F1 scores.
