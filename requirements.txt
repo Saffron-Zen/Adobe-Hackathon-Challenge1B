@@ -1,0 +1,23 @@
+# Core dependencies
+pymupdf==1.24.1
+sentence-transformers==2.6.1
+chromadb==0.4.22
+requests==2.31.0
+numpy==1.26.4
+pydantic==2.6.4
+
+# Performance optimizations
+aiohttp==3.9.3
+asyncio
+psutil==5.9.8
+
+# Optional dependencies for API
+fastapi==0.110.0
+uvicorn==0.29.0
+
+# Development dependencies
+pytest==8.1.1
+python-dotenv==1.0.1
+
+# Fix for Python 3.12 compatibility
+setuptools>=68.0.0

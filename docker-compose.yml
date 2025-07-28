@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  document-analyzer:
+    build: .
+    container_name: document-analyzer
+    restart: unless-stopped
+    
+    # Environment variables
+    environment:
+      - PYTHONPATH=/app
+      - LOG_LEVEL=INFO
+    
+    # Volume mounts for persistent data
+    volumes:
+      - ./documents:/app/documents:ro  # Read-only documents
+      - ./output:/app/output           # Output directory
+      - ./analysis_results:/app/analysis_results  # Analysis results
+      - document_db:/app/chroma_db     # Persistent vector database
+    
+    # Port mapping (if using FastAPI)
+    ports:
+      - "8000:8000"
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 512M
+          cpus: '0.5'
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    
+    # Optional: Override default command
+    # command: ["python", "document_analyzer.py", "input.json", "output.json"]
+    
+    # For FastAPI server:
+    # command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+    
+    # For development with interactive shell:
+    # command: ["/bin/bash"]
+    # stdin_open: true
+    # tty: true
+
+volumes:
+  document_db:
+    driver: local
