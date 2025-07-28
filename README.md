@@ -69,11 +69,19 @@ The analysis will start, and upon completion, the results will be saved to `outp
 ---
 
 ## 📊 Performance Deep Dive
-![Comparative Analysis](Analytics/comparative_analysis.png)
+  ![Comparative Analysis](Analytics/comparative_analysis.png)
 - **Comparative Analysis:** Showcases the optimized system's overwhelming superiority in performance, speed, and resource efficiency against the baseline.
+
+  ![Cross Lingual Latency Multilingual Analysis](Analytics/cross_lingual_latency_multilingual_analysis.png)
 - **Cross-lingual Latency:** Demonstrates exceptional speed improvements, slashing latency by up to 85% across diverse languages.
+
+  ![Detailed Accuracy Analysis](Analytics/detailed_accuracy_analysis.png)
 - **Detailed Accuracy Analysis:** Highlights a significant leap in information quality with top-tier precision, recall, and F1 scores.
+
+  ![Detailed Performanc Analysis](Analytics/detailed_performance_analysis.png)
 - **Detailed Performance Analysis:** Provides a granular look at the performance gains, confirming faster processing, minimal memory footprint, and higher throughput.
+
+  ![Time Series Analysis](Analytics/time_series_analysis.png)
 - **Time Series Analysis:** Confirms the system's rock-solid stability and sustained high performance over continuous operation.
 
 ---
